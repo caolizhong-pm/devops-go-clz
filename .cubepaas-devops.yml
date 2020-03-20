@@ -9,6 +9,7 @@ stages:
         cd /go/src/github.com/cubepaas/devops-go
         go build -o bin/hello-server
         go test -cover
+        ls
 - name: Publish
   steps:
   - publishImageConfig:
